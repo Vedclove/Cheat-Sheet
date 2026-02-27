@@ -1,4 +1,2 @@
 jupyter-book<2
 sphinx-autobuild
-matplotlib
-numpy
