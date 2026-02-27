@@ -75,7 +75,7 @@ target/
 .ipynb_checkpoints
 
 # JupyterBook
-_build/
+mybook/_build
 
 # IPython
 profile_default/
