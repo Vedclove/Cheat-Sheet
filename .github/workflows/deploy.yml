@@ -37,8 +37,7 @@ jobs:
 
       - name: Build the book
         run: |
-          cd mybook
-          jupyter-book build .
+          jupyter-book build mybook/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
