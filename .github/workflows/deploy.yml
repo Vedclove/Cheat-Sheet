@@ -33,7 +33,7 @@ jobs:
 
       - name: Clear Jupyter Book cache
         run: |
-          jupyter-book clean mybook/ --all
+          jupyter-book clean mybook/ --all || true
 
       - name: Build the book
         run: |
