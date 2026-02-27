@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
+- file: programming-languages/programming-languages
+  sections:
+  - file: programming-languages/python
+  - file: programming-languages/javascript
+- file: devops/devops
+  sections:
+  - file: devops/docker
+  - file: devops/github  
 - file: markdown-notebooks

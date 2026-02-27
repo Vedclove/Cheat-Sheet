@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My sample book</title>
+    <title>Ved’s Cheat-Sheet &#8212; Ved&#39;s Cheat-Sheet</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="Programming Languages" href="programming-languages/programming-languages.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -156,8 +156,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ved's Cheat-Sheet - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Ved's Cheat-Sheet - Home"/>`);</script>
   
   
 </a></div>
@@ -178,13 +178,21 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Welcome to your Jupyter Book
+                    Ved’s Cheat-Sheet
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="programming-languages/programming-languages.html">Programming Languages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="programming-languages/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="programming-languages/javascript.html">JavaScript</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="devops/devops.html">DevOps</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="devops/docker.html">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devops/github.html">GitHub</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -240,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/Vedclove/Cheat-Sheet" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -257,7 +265,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Vedclove/Cheat-Sheet/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -358,7 +366,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -369,11 +379,44 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>Ved’s Cheat-Sheet</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-project">About This Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-inside">What’s Inside</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-at-a-glance">Chapters at a Glance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-navigate">How to Navigate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-formatting-showcase">MyST Formatting Showcase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions-callout-boxes">Admonitions (Callout Boxes)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks">Code Blocks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-equations">Math &amp; Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figures">Figures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dropdowns">Dropdowns</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-references-labels">Cross-References &amp; Labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-lists">Definition Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-blocks">Line Blocks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-notes">Margin Notes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epigraph-pull-quote">Epigraph &amp; Pull-Quote</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sidebar">Sidebar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rubric-un-numbered-heading">Rubric (Un-numbered Heading)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-reference-card">Quick Reference Card</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -383,20 +426,563 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ved-s-cheat-sheet">
+<h1>Ved’s Cheat-Sheet<a class="headerlink" href="#ved-s-cheat-sheet" title="Link to this heading">#</a></h1>
+<blockquote class="epigraph">
+<div><p>The best way to remember something is to write it down — and the best way to share it is to build a book.</p>
+<p class="attribution">—Vishal Lavangare</p>
+</div></blockquote>
+<p>Welcome to <strong>Ved’s Cheat-Sheet</strong> — a living, growing personal knowledge base built with <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> and <abbr title="Markedly Structured Text">MyST</abbr> Markdown. This book serves as a quick-reference guide, covering everything from programming syntax to development workflows.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This book is a <strong>work in progress</strong>. New pages and sections are added regularly.
+Contributions and suggestions are always welcome via <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet/issues">GitHub Issues</a>.</p>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming-languages/programming-languages.html">Programming Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devops/devops.html">DevOps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 </div>
+<hr class="docutils" />
+<section id="about-this-project">
+<h2>About This Project<a class="headerlink" href="#about-this-project" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">What is a Cheat-Sheet?</p>
+<p>A <strong>cheat sheet</strong> is a concise set of notes used for quick reference. Unlike tutorials or textbooks, it skips lengthy explanations and gets straight to the <strong>syntax</strong>, <strong>commands</strong>, and <strong>patterns</strong> you need — when you need them.</p>
+</div>
+<p>This project is authored by <strong>Vishal Lavangare</strong> (alias <sup>Vedclove</sup>) and is publicly hosted at <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet">github.com/Vedclove/Cheat-Sheet</a>.</p>
+<p>The book is built using:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> — for beautiful, publication-quality books from Markdown and Notebooks</p></li>
+<li><p><a class="reference external" href="https://myst-parser.readthedocs.io">MyST Markdown</a> — a powerful Markdown flavor supporting roles and directives</p></li>
+<li><p><a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> — for automated CI/CD builds and deployments</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org">Sphinx</a> — the underlying Python documentation engine</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="what-s-inside">
+<h2>What’s Inside<a class="headerlink" href="#what-s-inside" title="Link to this heading">#</a></h2>
+<section id="chapters-at-a-glance">
+<span id="chapters-overview"></span><h3>Chapters at a Glance<a class="headerlink" href="#chapters-at-a-glance" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table" id="chapters-table">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Book Chapters Overview</span><a class="headerlink" href="#chapters-table" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Chapter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Format</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="xref std std-doc">markdown</span></p></td>
+<td><p>MyST Markdown syntax, roles, directives, and formatting tips</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="notebooks.html"><span class="doc">Content with notebooks</span></a></p></td>
+<td><p>Working with Jupyter Notebooks as content pages with live code</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.ipynb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a></p></td>
+<td><p>Combining Markdown prose with executable code cells</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.md</span></code> + code</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="how-to-navigate">
+<h2>How to Navigate<a class="headerlink" href="#how-to-navigate" title="Link to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the <strong>sidebar</strong> on the left to jump between chapters. Use <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">K</kbd></kbd> (or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">⌘</kbd>+<kbd class="kbd docutils literal notranslate">K</kbd></kbd> on macOS) to open the search bar anywhere in the book.</p>
+</div>
+<p><strong>Step-by-step navigation guide:</strong></p>
+<ol class="arabic simple">
+<li><p>Browse chapters using the <strong>Table of Contents</strong> in the left sidebar</p></li>
+<li><p>Use the <strong>Previous / Next</strong> buttons at the bottom of each page</p></li>
+<li><p>Click the <kbd class="kbd docutils literal notranslate">↑</kbd> / <kbd class="kbd docutils literal notranslate">↓</kbd> arrow icons to navigate sections</p></li>
+<li><p>Use the <strong>download</strong> buttons in the top bar to export any page as <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> or <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code></p></li>
+<li><p>Click <strong>“Open in Colab”</strong> or <strong>“Launch Binder”</strong> on notebook pages for interactive execution</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="myst-formatting-showcase">
+<h2>MyST Formatting Showcase<a class="headerlink" href="#myst-formatting-showcase" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>This section is the <strong>core reference</strong> for MyST syntax. Each subsection demonstrates a specific feature — bookmark it for future use.</p>
+</div></blockquote>
+<section id="admonitions-callout-boxes">
+<span id="admonitions"></span><h3>Admonitions (Callout Boxes)<a class="headerlink" href="#admonitions-callout-boxes" title="Link to this heading">#</a></h3>
+<p>Admonitions are styled callout boxes. Here are all the built-in types:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note</strong> — Neutral, supplementary information.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Warning</strong> — Something might break or go wrong if you ignore this.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Important</strong> — Pay close attention to this.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Tip</strong> — A helpful hint or best practice.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Caution</strong> — Proceed with care; this is potentially risky.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>Danger</strong> — This can cause serious, hard-to-reverse harm.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><strong>See Also</strong> — Related pages: <span class="xref std std-doc">markdown</span>, <a class="reference internal" href="notebooks.html"><span class="doc">Content with notebooks</span></a></p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Hint</strong> — A subtle nudge in the right direction.</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p><strong>Error</strong> — This is what a documented error looks like.</p>
+</div>
+<p>Custom admonitions use <code class="docutils literal notranslate"><span class="pre">{admonition}</span></code> with a title and optional class:</p>
+<div class="tip admonition">
+<p class="admonition-title">Pro Tip: Use Keyboard Shortcuts</p>
+<p>Press <kbd class="kbd docutils literal notranslate">s</kbd> to focus the <strong>search bar</strong> instantly. Press <kbd class="kbd docutils literal notranslate">t</kbd> to open the <strong>table of contents</strong> panel.</p>
+</div>
+</section>
+<section id="code-blocks">
+<span id="id1"></span><h3>Code Blocks<a class="headerlink" href="#code-blocks" title="Link to this heading">#</a></h3>
+<p><strong>Fenced code block</strong> with syntax highlighting:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># A simple Python example</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong><code class="docutils literal notranslate"><span class="pre">{code-block}</span></code> directive</strong> — supports line numbers, captions, and line emphasis:</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-number">Listing 1 </span><span class="caption-text">Building this book from the terminal</span><a class="headerlink" href="#id4" title="Link to this code">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>      <span class="c1"># install the tool</span>
+<span class="linenos">2</span><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">repo</span>              <span class="c1"># navigate to your project</span>
+<span class="hll"><span class="linenos">3</span><span class="n">jb</span> <span class="n">build</span> <span class="n">mybook</span><span class="o">/</span>              <span class="c1"># &lt;- this builds the HTML book</span>
+</span></pre></div>
+</div>
+</div>
+<p><strong>Bash example:</strong></p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-number">Listing 2 </span><span class="caption-text">Common Jupyter Book Commands</span><a class="headerlink" href="#id5" title="Link to this code">#</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build the book</span>
+jb<span class="w"> </span>build<span class="w"> </span>mybook/
+
+<span class="c1"># Clean the build cache</span>
+jb<span class="w"> </span>clean<span class="w"> </span>mybook/
+
+<span class="c1"># Create a new book scaffold</span>
+jb<span class="w"> </span>create<span class="w"> </span>my-new-book/
+</pre></div>
+</div>
+</div>
+<p>Inline code uses backticks: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code>.</p>
+</section>
+<section id="math-equations">
+<span id="math-section"></span><h3>Math &amp; Equations<a class="headerlink" href="#math-equations" title="Link to this heading">#</a></h3>
+<p>Inline math uses single dollar signs: <span class="math notranslate nohighlight">\(f(x) = ax^2 + bx + c\)</span></p>
+<p>Block math (unnumbered) uses double dollar signs:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
+\]</div>
+<p>Named, referenceable equations use the <code class="docutils literal notranslate"><span class="pre">{math}</span></code> directive:</p>
+<div class="math notranslate nohighlight" id="equation-euler-identity">
+<span class="eqno">(1)<a class="headerlink" href="#equation-euler-identity" title="Link to this equation">#</a></span>\[e^{i\pi} + 1 = 0\]</div>
+<p>Cross-reference it with: Equation <a class="reference internal" href="#equation-euler-identity">(1)</a> is Euler’s Identity — often called the most beautiful equation in mathematics.</p>
+<p>Another named equation:</p>
+<div class="math notranslate nohighlight" id="equation-gaussian">
+<span class="eqno">(2)<a class="headerlink" href="#equation-gaussian" title="Link to this equation">#</a></span>\[\int_{-\infty}^{\infty} e^{-x^2}\, dx = \sqrt{\pi}\]</div>
+<p>The Gaussian integral <a class="reference internal" href="#equation-gaussian">(2)</a> appears frequently in probability and statistics.</p>
+</section>
+<section id="tables">
+<span id="tables-section"></span><h3>Tables<a class="headerlink" href="#tables" title="Link to this heading">#</a></h3>
+<p><strong>Standard Markdown table:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Syntax</p></th>
+<th class="head text-center"><p>Description</p></th>
+<th class="head text-right"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">**text**</span></code></p></td>
+<td class="text-center"><p>Bold</p></td>
+<td class="text-right"><p><strong>bold</strong></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">*text*</span></code></p></td>
+<td class="text-center"><p>Italic</p></td>
+<td class="text-right"><p><em>italic</em></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">`code`</span></code></p></td>
+<td class="text-center"><p>Inline code</p></td>
+<td class="text-right"><p><code class="docutils literal notranslate"><span class="pre">code</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">~~text~~</span></code></p></td>
+<td class="text-center"><p>Strikethrough</p></td>
+<td class="text-right"><p>~~strike~~</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[text](url)</span></code></p></td>
+<td class="text-center"><p>Hyperlink</p></td>
+<td class="text-right"><p><a class="reference external" href="https://example.com">link</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><code class="docutils literal notranslate"><span class="pre">{list-table}</span></code> directive</strong> — great for wide tables or programmatic content:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="roles-table">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">MyST Roles Quick Reference</span><a class="headerlink" href="#roles-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Syntax</p></th>
+<th class="head"><p>Use Case</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Subscript</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{sub}\</span></code>text``</p></td>
+<td><p>Chemical formulas: H<sub>2</sub>O</p></td>
+</tr>
+<tr class="row-odd"><td><p>Superscript</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{sup}\</span></code>text``</p></td>
+<td><p>Exponents: E=mc<sup>2</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>Abbreviation</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{abbr}\</span></code>X (Long Form)``</p></td>
+<td><p><abbr title="Application Programming Interface">API</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p>Keyboard key</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{kbd}\</span></code>Key``</p></td>
+<td><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">C</kbd></kbd>, <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">⌘</kbd>+<kbd class="kbd docutils literal notranslate">Z</kbd></kbd></p></td>
+</tr>
+<tr class="row-even"><td><p>Document link</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{doc}\</span></code>page``</p></td>
+<td><p><span class="xref std std-doc">markdown</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Label reference</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{ref}\</span></code>label``</p></td>
+<td><p><a class="reference internal" href="#admonitions"><span class="std std-ref">Admonitions (Callout Boxes)</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Equation ref</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{eq}\</span></code>label``</p></td>
+<td><p><a class="reference internal" href="#equation-euler-identity">(1)</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Figure ref</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{numref}\</span></code>fig-label``</p></td>
+<td><p><a class="reference internal" href="#jb-logo"><span class="std std-numref">Fig. 1</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="figures">
+<span id="figures-section"></span><h3>Figures<a class="headerlink" href="#figures" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="jb-logo">
+<a class="reference internal image-reference" href="https://jupyterbook.org/_static/logo-wide.svg"><img alt="https://jupyterbook.org/_static/logo-wide.svg" src="https://jupyterbook.org/_static/logo-wide.svg" style="width: 320px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>Figure 1</strong> — The Jupyter Book logo. This book is built on top of it.</span><a class="headerlink" href="#jb-logo" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Cross-reference figures like this: see <a class="reference internal" href="#jb-logo"><span class="std std-numref">Fig. 1</span></a> for the Jupyter Book logo.</p>
+</section>
+<section id="dropdowns">
+<h3>Dropdowns<a class="headerlink" href="#dropdowns" title="Link to this heading">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Click to reveal: Why use a Cheat-Sheet book?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A structured cheat-sheet <strong>book</strong> (vs. a single file) lets you:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Organize references by topic with a navigable sidebar</p></li>
+<li><p class="sd-card-text">Include runnable Jupyter Notebook examples inline</p></li>
+<li><p class="sd-card-text">Export to PDF, HTML, or share as a website</p></li>
+<li><p class="sd-card-text">Version-control your knowledge with Git</p></li>
+<li><p class="sd-card-text">Search across all pages instantly</p></li>
+</ol>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">See: Git Quick Reference</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code></p></td>
+<td><p class="sd-card-text">Initialize a new repo</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></td>
+<td><p class="sd-card-text">Stage all changes</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;msg&quot;</span></code></p></td>
+<td><p class="sd-card-text">Commit staged changes</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code></p></td>
+<td><p class="sd-card-text">Push to remote</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">--oneline</span></code></p></td>
+<td><p class="sd-card-text">Compact commit history</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details></section>
+<section id="cross-references-labels">
+<span id="cross-refs"></span><h3>Cross-References &amp; Labels<a class="headerlink" href="#cross-references-labels" title="Link to this heading">#</a></h3>
+<p>You can label any heading or block with <code class="docutils literal notranslate"><span class="pre">(label)=</span></code> placed above it, then reference it using <code class="docutils literal notranslate"><span class="pre">{ref}</span></code>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#admonitions"><span class="std std-ref">Admonitions (Callout Boxes)</span></a> — jumps to the Admonitions section</p></li>
+<li><p><a class="reference internal" href="#code-blocks"><span class="std std-ref">Code Blocks</span></a> — jumps to Code Blocks</p></li>
+<li><p><a class="reference internal" href="#math-section"><span class="std std-ref">Math &amp; Equations</span></a> — jumps to Math &amp; Equations</p></li>
+<li><p><a class="reference internal" href="#tables-section"><span class="std std-ref">Tables</span></a> — jumps to Tables</p></li>
+<li><p><a class="reference internal" href="#cross-refs"><span class="std std-ref">Cross-References &amp; Labels</span></a> — jumps to this very section</p></li>
+</ul>
+</section>
+<section id="definition-lists">
+<h3>Definition Lists<a class="headerlink" href="#definition-lists" title="Link to this heading">#</a></h3>
+<p>Jupyter Book
+: A tool for building beautiful, publication-quality books from Markdown and Jupyter Notebooks.</p>
+<p>MyST Markdown
+: <abbr title="Markedly Structured Text">MyST</abbr> — a rich Markdown dialect supporting Sphinx roles and directives.</p>
+<p>Sphinx
+: The Python-based documentation engine that powers Jupyter Book under the hood.</p>
+<p>Directive
+: A multi-line content block that acts like a function, e.g., <code class="docutils literal notranslate"><span class="pre">```{note}</span> <span class="pre">...</span> <span class="pre">```</span></code>.</p>
+<p>Role
+: An inline markup element that acts like a function, e.g., <code class="docutils literal notranslate"><span class="pre">{kbd}`Ctrl`</span></code>.</p>
+</section>
+<section id="footnotes">
+<h3>Footnotes<a class="headerlink" href="#footnotes" title="Link to this heading">#</a></h3>
+<p>This sentence references a footnote.<a class="footnote-reference brackets" href="#fn1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>Footnotes can contain any Markdown — links, <strong>bold</strong>, <code class="docutils literal notranslate"><span class="pre">code</span></code>, etc.<a class="footnote-reference brackets" href="#fn2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+</section>
+<section id="line-blocks">
+<h3>Line Blocks<a class="headerlink" href="#line-blocks" title="Link to this heading">#</a></h3>
+<p>Line blocks preserve newlines and indentation — useful for addresses, poetry, or structured prose:</p>
+<p>| Vishal Lavangare
+| GitHub: <a class="reference external" href="http://github.com/Vedclove">github.com/Vedclove</a>
+| Project: Cheat-Sheet
+|     Branch: main</p>
+</section>
+<section id="margin-notes">
+<h3>Margin Notes<a class="headerlink" href="#margin-notes" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title">Quick Tip</p>
+<p>Margin notes appear in the right gutter and are ideal for side comments, links, or quick callouts without interrupting the main flow.</p>
+</aside>
+<p>Margin content is placed using the <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive. It renders alongside the main text in the page margin.</p>
+</section>
+<section id="epigraph-pull-quote">
+<h3>Epigraph &amp; Pull-Quote<a class="headerlink" href="#epigraph-pull-quote" title="Link to this heading">#</a></h3>
+<blockquote class="epigraph">
+<div><p>Programs must be written for people to read, and only incidentally for machines to execute.</p>
+<p class="attribution">—Harold Abelson, <em>Structure and Interpretation of Computer Programs</em></p>
+</div></blockquote>
+<blockquote class="pull-quote">
+<div><p>Keep it simple. Keep it readable. Keep it in version control.</p>
+</div></blockquote>
+</section>
+<section id="sidebar">
+<h3>Sidebar<a class="headerlink" href="#sidebar" title="Link to this heading">#</a></h3>
+<aside class="sidebar">
+<p class="sidebar-title">About the Author</p>
+<p><strong>Vishal Lavangare</strong> (Vedclove) is a developer who built this reference book as a personal productivity tool.</p>
+<ul class="simple">
+<li><p>GitHub: <a class="reference external" href="https://github.com/Vedclove">Vedclove</a></p></li>
+<li><p>Repo: <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet">Cheat-Sheet</a></p></li>
+</ul>
+</aside>
+<p>The <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> directive floats content to the side, letting it coexist with surrounding body text. It’s great for short bios, glossary terms, or quick links.</p>
+</section>
+<section id="rubric-un-numbered-heading">
+<h3>Rubric (Un-numbered Heading)<a class="headerlink" href="#rubric-un-numbered-heading" title="Link to this heading">#</a></h3>
+<p class="rubric">This is a rubric</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">{rubric}</span></code> creates a styled, un-numbered heading — useful for visual separation without affecting the TOC hierarchy.</p>
+</section>
+<section id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h3>
+<p>Comments in MyST use a <code class="docutils literal notranslate"><span class="pre">%</span></code> prefix. They are stripped from output entirely.</p>
+<p><strong>Syntax:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">comment</span>
+<span class="o">%</span> <span class="n">It</span> <span class="n">won</span><span class="s1">&#39;t appear in the rendered output</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="quick-reference-card">
+<h2>Quick Reference Card<a class="headerlink" href="#quick-reference-card" title="Link to this heading">#</a></h2>
+<p>This is your at-a-glance cheat sheet for the cheat sheet:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id6">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">MyST Formatting Quick Reference</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Feature</p></th>
+<th class="head"><p>Directive / Syntax</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>Note box</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{note}</span> <span class="pre">```</span></code></p></td>
+<td><p>Also: warning, tip, important, caution, danger, hint, seealso, error</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Custom admonition</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{admonition}</span> <span class="pre">Title</span> <span class="pre">```</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">:class:</span> <span class="pre">tip</span></code> etc. to style it</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Code block</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{code-block}</span> <span class="pre">python</span> <span class="pre">```</span></code></p></td>
+<td><p>Options: linenos, emphasize-lines, caption</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Inline code</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">`code`</span></code></p></td>
+<td><p>Standard Markdown</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Math (inline)</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">$formula$</span></code></p></td>
+<td><p>LaTeX syntax</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Math (block)</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">$$formula$$</span></code> or <code class="docutils literal notranslate"><span class="pre">```{math}</span> <span class="pre">```</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">:label:</span></code> for numbered equations</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Figure</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{figure}</span> <span class="pre">path</span> <span class="pre">```</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">:name:</span></code> to make cross-referenceable</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Dropdown</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{dropdown}</span> <span class="pre">Title</span> <span class="pre">```</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">:open:</span></code> to start expanded</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Table (list-table)</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{list-table}</span> <span class="pre">```</span></code></p></td>
+<td><p>Use <code class="docutils literal notranslate"><span class="pre">:header-rows:</span> <span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Target label</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">(label)=</span></code> above heading</p></td>
+<td><p>Reference with <code class="docutils literal notranslate"><span class="pre">{ref}\</span></code>label``</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Cross-reference</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">{doc}\</span></code>page`<code class="docutils literal notranslate"><span class="pre">,</span> </code>{ref}`label`<code class="docutils literal notranslate"><span class="pre">,</span> </code>{eq}`label``</p></td>
+<td><p>Links to pages, headings, equations</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Figure ref</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">{numref}\</span></code>fig-name``</p></td>
+<td><p>Auto-numbered “Figure X”</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Abbreviation</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">{abbr}\</span></code>X (Full Form)``</p></td>
+<td><p>Shows tooltip on hover</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Keyboard</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">{kbd}\</span></code>Key``</p></td>
+<td><p>Renders as a styled key badge</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Sub/Superscript</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">{sub}\</span></code>x`<code class="docutils literal notranslate"><span class="pre">,</span> </code>{sup}`x``</p></td>
+<td><p>Inline sub/superscript</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Footnote</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">[^label]</span></code> + <code class="docutils literal notranslate"><span class="pre">[^label]:</span> <span class="pre">text</span></code></p></td>
+<td><p>Renders at page bottom</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Definition list</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">Term\n:</span> <span class="pre">Definition</span></code></p></td>
+<td><p>CommonMark extension</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Line block</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">\|</span> <span class="pre">line</span> <span class="pre">one\n\|</span> <span class="pre">line</span> <span class="pre">two</span></code></p></td>
+<td><p>Preserves line breaks</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Margin note</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{margin}</span> <span class="pre">```</span></code></p></td>
+<td><p>Floats to right gutter</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Epigraph</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{epigraph}</span> <span class="pre">```</span></code></p></td>
+<td><p>Styled block quote with attribution</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Pull-quote</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{pull-quote}</span> <span class="pre">```</span></code></p></td>
+<td><p>Highlighted inline quote</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Sidebar</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{sidebar}</span> <span class="pre">Title</span> <span class="pre">```</span></code></p></td>
+<td><p>Floated side content block</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Rubric</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{rubric}</span> <span class="pre">Title</span> <span class="pre">```</span></code></p></td>
+<td><p>Un-numbered styled heading</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Comment</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">comment</span> <span class="pre">text</span></code></p></td>
+<td><p>Invisible in output</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>TOC</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{tableofcontents}</span> <span class="pre">```</span></code></p></td>
+<td><p>Renders the book’s TOC tree</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Bibliography</p></th>
+<td><p><code class="docutils literal notranslate"><span class="pre">```{bibliography}</span> <span class="pre">```</span></code> + <code class="docutils literal notranslate"><span class="pre">{cite}\</span></code>key``</p></td>
+<td><p>Requires a <code class="docutils literal notranslate"><span class="pre">.bib</span></code> file</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h2>
+<p>Spotted a mistake or want to add a new topic?</p>
+<ol class="arabic simple">
+<li><p>Fork the repo at <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet">github.com/Vedclove/Cheat-Sheet</a></p></li>
+<li><p>Create a new branch: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">add/my-topic</span></code></p></li>
+<li><p>Add or edit <code class="docutils literal notranslate"><span class="pre">.md</span></code> / <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files in the <code class="docutils literal notranslate"><span class="pre">mybook/</span></code> directory</p></li>
+<li><p>Update <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet/blob/main/mybook/_toc.yml"><code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></a> to include your new page</p></li>
+<li><p>Submit a Pull Request</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please keep each cheat-sheet page <strong>concise and scannable</strong>. Prefer tables, code blocks, and bullet lists over long prose paragraphs.</p>
+</div>
+<hr class="docutils" />
+<p><em>Built with <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> · Authored by <a class="reference external" href="https://github.com/Vedclove">Vedclove</a> · Source on <a class="reference external" href="https://github.com/Vedclove/Cheat-Sheet">GitHub</a></em></p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="fn1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Footnotes are defined anywhere in the document and automatically rendered at the bottom of the page.</p>
+</aside>
+<aside class="footnote brackets" id="fn2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>This is the second footnote. It contains <code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">code</span></code> and a <a class="reference external" href="https://jupyterbook.org">link</a>.</p>
+</aside>
+</aside>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -430,11 +1016,11 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="markdown.html"
+       href="programming-languages/programming-languages.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">Programming Languages</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -445,6 +1031,46 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-project">About This Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-inside">What’s Inside</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-at-a-glance">Chapters at a Glance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-navigate">How to Navigate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-formatting-showcase">MyST Formatting Showcase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions-callout-boxes">Admonitions (Callout Boxes)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks">Code Blocks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-equations">Math &amp; Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tables">Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figures">Figures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dropdowns">Dropdowns</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-references-labels">Cross-References &amp; Labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-lists">Definition Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-blocks">Line Blocks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-notes">Margin Notes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epigraph-pull-quote">Epigraph &amp; Pull-Quote</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sidebar">Sidebar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rubric-un-numbered-heading">Rubric (Un-numbered Heading)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-reference-card">Quick Reference Card</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -454,7 +1080,7 @@ It does not go in-depth into any particular topic - check out <a class="referenc
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Vishal Lavangare (Vedclove)
 </p>
 
   </div>
