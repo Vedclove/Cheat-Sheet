@@ -31,6 +31,10 @@ jobs:
         run: |
           pip install jupyter-book
 
+      - name: Clear Jupyter Book cache
+        run: |
+          jupyter-book clean mybook/ --all
+
       - name: Build the book
         run: |
           cd mybook
