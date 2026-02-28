@@ -3,8 +3,8 @@
 A quick-reference collection of syntax, patterns, and tips for commonly used programming languages.
 
 ---
-
-::::{grid} 2 2 3 3 % Main Grid Start
+% Main Grid Start
+::::{grid} 2 2 3 3
 :gutter: 3
 
 % Docker Start

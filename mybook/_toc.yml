@@ -4,12 +4,30 @@
 format: jb-book
 root: intro
 chapters:
+# Programming Language
 - file: programming-languages/programming-languages
   sections:
   - file: programming-languages/python
   - file: programming-languages/javascript
+# DevOps
 - file: devops/devops
   sections:
   - file: devops/docker
-  - file: devops/github  
-- file: markdown-notebooks
+  - file: devops/github
+# Frameworks
+- file: frameworks/frameworks
+  sections:
+  - file: frameworks/jupyterbook
+  - file: frameworks/uv
+# Cloud Services
+- file: cloud-services/cloud-services
+  sections:
+  - file: cloud-services/aws
+# Terminal
+- file: terminal/terminal
+  sections:
+  - file: terminal/bash
+  - file: terminal/nano
+  - file: terminal/vim  
+
+
