@@ -29,15 +29,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install "jupyter-book<2.0"
+          pip install "jupyter-book>=2,<3"
 
       - name: Clear Jupyter Book cache
         run: |
-          jupyter-book clean mybook/ --all || true
+          jupyter book clean mybook --all || true
 
       - name: Build the book
         run: |
-          jupyter-book build mybook/
+          jupyter book build mybook
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
