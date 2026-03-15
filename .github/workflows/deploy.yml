@@ -17,10 +17,16 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mybook
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,16 +39,16 @@ jobs:
 
       - name: Clear Jupyter Book cache
         run: |
-          jupyter book clean mybook --all || true
+          jupyter book clean --all -y || true
 
       - name: Build the book
         run: |
-          jupyter book build mybook
+          jupyter book build --html
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: ./mybook/_build/html
+          path: ./mybook/_build/site
 
   deploy:
     environment:
