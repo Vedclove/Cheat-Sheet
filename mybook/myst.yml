@@ -1,0 +1,37 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+
+project:
+  title: Ved's Cheat-Sheet
+  authors:
+    - name: Vishal Lavangare (Vedclove)
+  github: Vedclove/Cheat-Sheet
+  bibliography:
+    - references.bib
+  toc:
+    - file: intro
+    - file: programming-languages/programming-languages
+      children:
+        - file: programming-languages/python
+        - file: programming-languages/javascript
+    - file: devops/devops
+      children:
+        - file: devops/docker
+        - file: devops/github
+    - file: frameworks/frameworks
+      children:
+        - file: frameworks/jupyterbook
+        - file: frameworks/uv
+    - file: cloud-services/cloud-services
+      children:
+        - file: cloud-services/aws
+    - file: terminal/terminal
+      children:
+        - file: terminal/bash
+        - file: terminal/nano
+        - file: terminal/vim
+
+site:
+  template: book-theme
+  options:
+    logo: logo.png

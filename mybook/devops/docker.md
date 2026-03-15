@@ -15,33 +15,114 @@
 
 ---
 
-```{dropdown} 📦 Installation
+:::{dropdown} 📦 Installation
 :open:
 
-*Coming soon*
+**Mac OS (Docker Desktop)**
+```bash
+brew install --cask docker
+open -a Docker
 ```
 
-```{dropdown} 🚀 Basic Commands
+**Ubuntu/Debian (Docker Engine)**
+```bash
+sudo apt update
+sudo apt install -y docker.io
+sudo usermod -aG docker $USER
+newgrp docker
+```
+:::
 
-*Coming soon*
+:::{dropdown} 🚀 Basic Commands
+
+```bash
+docker version
+docker info
+docker pull nginx:latest
+docker images
+docker ps
+docker ps -a
+docker run --rm -p 8080:80 nginx:latest
+docker exec -it <container> /bin/sh
+docker logs -f <container>
+docker stop <container>
+docker rm <container>
+```
+:::
+
+:::{dropdown} 📄 Dockerfile
+
+**Minimal app image**
+```dockerfile
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
 ```
 
-```{dropdown} 📄 Dockerfile
+**Build and run**
+```bash
+docker build -t myapp:latest .
+docker run --rm -p 8000:8000 myapp:latest
+```
+:::
 
-*Coming soon*
+:::{dropdown} 🐙 Docker Compose
+
+**compose.yaml**
+```yaml
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=dev
+  db:
+    image: postgres:16
+    environment:
+      - POSTGRES_PASSWORD=example
+    ports:
+      - "5432:5432"
 ```
 
-```{dropdown} 🐙 Docker Compose
+**Commands**
+```bash
+docker compose up -d
+docker compose logs -f
+docker compose down
+```
+:::
 
-*Coming soon*
+:::{dropdown} 💾 Volumes & Networks
+
+**Volumes**
+```bash
+docker volume ls
+docker volume create app-data
+docker run -v app-data:/var/lib/app myapp:latest
 ```
 
-```{dropdown} 💾 Volumes & Networks
-
-*Coming soon*
+**Networks**
+```bash
+docker network ls
+docker network create app-net
+docker run --network app-net --name web myapp:latest
 ```
+:::
 
-```{dropdown} 🏷️ Common Flags & Options
+:::{dropdown} 🏷️ Common Flags & Options
 
-*Coming soon*
-```
+| Flag | Meaning |
+|------|---------|
+| `-d` | Detached mode |
+| `-p` | Port mapping |
+| `-v` | Bind mount or named volume |
+| `-e` | Environment variable |
+| `--name` | Container name |
+| `--rm` | Remove container on exit |
+| `-it` | Interactive TTY |
+| `--restart` | Restart policy |
+:::

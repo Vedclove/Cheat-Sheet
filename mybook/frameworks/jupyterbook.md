@@ -1,4 +1,4 @@
-```{image} https://jupyterbook.org/build/logo-square-1a40650ce067e62121b91e333dc73eb9.svg
+```{image} https://jupyterbook.org/build/config-item-938b93dc-1505efe91c0bb17a705b9a08b033d0a1.svg
 :height: 60px
 :align: left
 ```
@@ -16,38 +16,99 @@
 
 ---
 
-```{dropdown} 📦 Installation & Setup
+:::{dropdown} 📦 Installation & Setup
 :open:
 
-*Coming soon*
+**Install**
+```bash
+pip install "jupyter-book<2"
 ```
 
-```{dropdown} 📁 Project Structure
-
-*Coming soon*
+**Create a new book**
+```bash
+jb create mybook
 ```
 
-```{dropdown} 📝 Content Types
+**Build**
+```bash
+jb build mybook
+```
+:::
 
-*Coming soon*
+:::{dropdown} 📁 Project Structure
+
+```text
+mybook/
+  _config.yml
+  _toc.yml
+  intro.md
+  chapter-1/
+    index.md
+```
+:::
+
+:::{dropdown} 📝 Content Types
+
+**Markdown pages**
+```text
+intro.md
+chapter-1/section.md
 ```
 
-```{dropdown} 🔧 _config.yml Reference
-
-*Coming soon*
+**Notebooks**
+```text
+notebooks/example.ipynb
 ```
 
-```{dropdown} 🗂️ _toc.yml Reference
-
-*Coming soon*
+**MyST directives**
+````md
+```{admonition} Title
+:class: tip
+Content
 ```
+````
+:::
 
-```{dropdown} 🏗️ Building & Previewing
+:::{dropdown} 🔧 _config.yml Reference
 
-*Coming soon*
+```yaml
+title: My Book
+author: Your Name
+logo: _static/logo.png
+execute:
+  execute_notebooks: auto
+repository:
+  url: https://github.com/user/repo
+html:
+  use_repository_button: true
 ```
+:::
 
-```{dropdown} 🚀 Deployment (GitHub Pages)
+:::{dropdown} 🗂️ _toc.yml Reference
 
-*Coming soon*
+```yaml
+format: jb-book
+root: intro
+chapters:
+  - file: chapter-1/index
+    sections:
+      - file: chapter-1/section
 ```
+:::
+
+:::{dropdown} 🏗️ Building & Previewing
+
+```bash
+jb build mybook
+jb build mybook --all
+python -m http.server -d mybook/_build/html 8000
+```
+:::
+
+:::{dropdown} 🚀 Deployment (GitHub Pages)
+
+```bash
+jb build mybook
+ghp-import -n -p -f mybook/_build/html
+```
+:::

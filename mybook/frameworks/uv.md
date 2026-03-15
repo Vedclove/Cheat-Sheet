@@ -16,33 +16,83 @@
 
 ---
 
-```{dropdown} 📦 Installation
+:::{dropdown} 📦 Installation
 :open:
 
-*Coming soon*
+**Install**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv --version
 ```
 
-```{dropdown} 🚀 Basic Commands
+**Update**
+```bash
+uv self update
+```
+:::
 
-*Coming soon*
+:::{dropdown} 🚀 Basic Commands
+
+```bash
+uv --help
+uv init
+uv add requests
+uv remove requests
+uv sync
+uv run python -V
+```
+:::
+
+:::{dropdown} 📁 Project Management
+
+**Create a project**
+```bash
+uv init myapp
+cd myapp
 ```
 
-```{dropdown} 📁 Project Management
-
-*Coming soon*
+**Add dependencies**
+```bash
+uv add fastapi
+uv add "requests>=2.31"
 ```
 
-```{dropdown} 🐍 Python Version Management
+**Remove dependencies**
+```bash
+uv remove fastapi
+```
+:::
 
-*Coming soon*
+:::{dropdown} 🐍 Python Version Management
+
+```bash
+uv python list
+uv python install 3.12
+uv python pin 3.12
+uv python use 3.12
+```
+:::
+
+:::{dropdown} 📜 Scripts & Tools
+
+**Run scripts**
+```bash
+uv run python app.py
+uv run pytest
 ```
 
-```{dropdown} 📜 Scripts & Tools
-
-*Coming soon*
+**Run tools without installing**
+```bash
+uvx ruff check .
+uvx black .
 ```
+:::
 
-```{dropdown} 🔒 Lockfiles & Reproducibility
+:::{dropdown} 🔒 Lockfiles & Reproducibility
 
-*Coming soon*
+```bash
+uv lock
+uv sync --frozen
+uv export -o requirements.txt
 ```
+:::

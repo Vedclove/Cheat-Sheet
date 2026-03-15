@@ -16,7 +16,7 @@
 
 ---
 
-```{dropdown} 🚀 Opening & Exiting
+:::{dropdown} 🚀 Opening & Exiting
 :open:
 
 | Command | Description |
@@ -31,9 +31,9 @@
 | `:wq` or `ZZ` | Save and quit |
 | `:w filename` | Save as new filename |
 | `:x` | Save only if changed, then quit |
-```
+:::
 
-```{dropdown} 🎮 Modes
+:::{dropdown} 🎮 Modes
 
 | Mode | Enter with | Description |
 |------|-----------|-------------|
@@ -44,9 +44,9 @@
 | **Visual Block** | `Ctrl+v` | Select a block/column |
 | **Command-line** | `:` | Run ex commands |
 | **Replace** | `R` | Overwrite characters |
-```
+:::
 
-```{dropdown} 🧭 Navigation (Normal Mode)
+:::{dropdown} 🧭 Navigation (Normal Mode)
 
 **Basic movement**
 
@@ -84,9 +84,9 @@
 | `M` | Middle of screen |
 | `L` | Bottom of screen |
 | `zz` | Center cursor on screen |
-```
+:::
 
-```{dropdown} ✏️ Inserting & Editing
+:::{dropdown} ✏️ Inserting & Editing
 
 **Entering insert mode**
 
@@ -122,9 +122,9 @@
 | `u` | Undo |
 | `Ctrl+r` | Redo |
 | `.` | Repeat last change |
-```
+:::
 
-```{dropdown} 🔍 Search & Replace
+:::{dropdown} 🔍 Search & Replace
 
 **Searching**
 
@@ -147,9 +147,9 @@
 | `:%s/old/new/g` | Replace all in file |
 | `:%s/old/new/gc` | Replace all with confirmation |
 | `:5,10s/old/new/g` | Replace in lines 5–10 |
-```
+:::
 
-```{dropdown} 📋 Visual Mode & Selection
+:::{dropdown} 📋 Visual Mode & Selection
 
 | Key | Description |
 |-----|-------------|
@@ -165,9 +165,9 @@
 | `=` | Auto-indent selected |
 | `~` | Toggle case of selected |
 | `u` / `U` | Lowercase / Uppercase selected |
-```
+:::
 
-```{dropdown} 🪟 Windows & Tabs
+:::{dropdown} 🪟 Windows & Tabs
 
 **Splits**
 
@@ -190,9 +190,9 @@
 | `gT` | Previous tab |
 | `:tabclose` | Close tab |
 | `:tabs` | List all tabs |
-```
+:::
 
-```{dropdown} 📁 Buffers & Files
+:::{dropdown} 📁 Buffers & Files
 
 | Command | Description |
 |---------|-------------|
@@ -204,9 +204,9 @@
 | `:bd` | Delete (close) buffer |
 | `:r file` | Read file contents into current buffer |
 | `:r !cmd` | Read command output into buffer |
-```
+:::
 
-```{dropdown} ⚙️ Useful Settings (`:set`)
+:::{dropdown} ⚙️ Useful Settings (`:set`)
 
 | Command | Description |
 |---------|-------------|
@@ -239,9 +239,9 @@ set expandtab
 set wrap
 syntax on
 ```
-```
+:::
 
-```{dropdown} 🔧 Macros & Registers
+:::{dropdown} 🔧 Macros & Registers
 
 | Command | Description |
 |---------|-------------|
@@ -253,9 +253,9 @@ syntax on
 | `"ay` | Yank into register `a` |
 | `"ap` | Paste from register `a` |
 | `:reg` | Show all registers |
-```
+:::
 
-```{dropdown} 💡 Tips & Tricks
+:::{dropdown} 💡 Tips & Tricks
 
 - **Repeat a command N times:** prefix with a number, e.g. `5j` moves down 5 lines, `3dd` deletes 3 lines
 - **Text objects:** `ciw` (change inner word), `ci"` (change inside quotes), `da(` (delete around parentheses)
@@ -265,4 +265,4 @@ syntax on
 - **Execute shell command:** `:!ls`
 - **Filter lines through command:** `:%!sort -u`
 - **Spell check:** `:set spell`, `]s` next misspelling, `z=` suggest corrections
-```
+:::

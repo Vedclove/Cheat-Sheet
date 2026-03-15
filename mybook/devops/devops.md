@@ -9,7 +9,7 @@ A quick-reference collection of syntax, patterns, and tips for commonly used pro
 
 % Docker Start
 :::{grid-item-card} 
-:link: Docker
+:link: docker
 :link-type: doc
 
 ```{image} https://www.vectorlogo.zone/logos/docker/docker-icon.svg
@@ -21,9 +21,10 @@ A quick-reference collection of syntax, patterns, and tips for commonly used pro
 Containerization platform for packaging applications with dependencies.
 ::: 
 % Docker End
+
 % Github Start
 :::{grid-item-card} 
-:link: github   
+:link: github
 :link-type: doc
 
 ```{image} https://www.svgrepo.com/show/394174/github.svg

@@ -16,7 +16,7 @@
 
 ---
 
-```{dropdown} 🧭 Navigation & File Management
+:::{dropdown} 🧭 Navigation & File Management
 :open:
 
 | Command | Description |
@@ -39,9 +39,9 @@
 | `mv src dst` | Move or rename |
 | `touch file` | Create empty file / update timestamp |
 | `ln -s target link` | Create symbolic link |
-```
+:::
 
-```{dropdown} 📄 Viewing & Editing Files
+:::{dropdown} 📄 Viewing & Editing Files
 
 | Command | Description |
 |---------|-------------|
@@ -59,9 +59,9 @@
 | `cut -d: -f1 file` | Cut field 1 using `:` delimiter |
 | `tr 'a-z' 'A-Z'` | Translate characters (lowercase to upper) |
 | `diff file1 file2` | Show differences between files |
-```
+:::
 
-```{dropdown} 🔍 Searching
+:::{dropdown} 🔍 Searching
 
 | Command | Description |
 |---------|-------------|
@@ -78,9 +78,9 @@
 | `locate filename` | Fast file search (uses index) |
 | `which cmd` | Show path of command |
 | `type cmd` | Show how a command is resolved |
-```
+:::
 
-```{dropdown} 🔀 Pipes, Redirection & I/O
+:::{dropdown} 🔀 Pipes, Redirection & I/O
 
 | Syntax | Description |
 |--------|-------------|
@@ -97,9 +97,9 @@
 | `cmd1 ; cmd2` | Run cmd2 regardless of cmd1 |
 | `$(cmd)` | Command substitution |
 | `` `cmd` `` | Command substitution (older syntax) |
-```
+:::
 
-```{dropdown} 📦 Variables & Strings
+:::{dropdown} 📦 Variables & Strings
 
 **Variables**
 
@@ -139,9 +139,9 @@ echo ${str^^}         # Uppercase: HELLO WORLD
 echo ${str% World}    # Strip suffix: Hello
 echo ${str#Hello }    # Strip prefix: World
 ```
-```
+:::
 
-```{dropdown} 🔢 Arithmetic
+:::{dropdown} 🔢 Arithmetic
 
 ```bash
 # Arithmetic expansion
@@ -165,9 +165,9 @@ echo "scale=2; 10/3" | bc
 | `**` | Exponentiation |
 | `++x` / `x++` | Pre/post increment |
 | `--x` / `x--` | Pre/post decrement |
-```
+:::
 
-```{dropdown} 🔁 Control Flow
+:::{dropdown} 🔁 Control Flow
 
 **if / elif / else**
 
@@ -232,9 +232,9 @@ case "$var" in
   *)     echo "Unknown" ;;
 esac
 ```
-```
+:::
 
-```{dropdown} 🧩 Functions
+:::{dropdown} 🧩 Functions
 
 ```bash
 greet() {
@@ -254,9 +254,9 @@ result=$(greet "Bob")      # capture output
 | Local variable | `local var=value` |
 | Return status | `return N` (0=success) |
 | Access args | `$1`, `$2`, `$@` |
-```
+:::
 
-```{dropdown} 📋 Arrays
+:::{dropdown} 📋 Arrays
 
 ```bash
 # Indexed array
@@ -274,9 +274,9 @@ echo ${map[key]}
 echo ${!map[@]}         # all keys
 echo ${map[@]}          # all values
 ```
-```
+:::
 
-```{dropdown} 📜 Script Basics
+:::{dropdown} 📜 Script Basics
 
 **Template**
 
@@ -318,9 +318,9 @@ exit 1    # general error
 exit 2    # misuse of command
 echo $?   # check last exit code
 ```
-```
+:::
 
-```{dropdown} ⚙️ Process Management
+:::{dropdown} ⚙️ Process Management
 
 | Command | Description |
 |---------|-------------|
@@ -337,9 +337,9 @@ echo $?   # check last exit code
 | `wait` | Wait for all background jobs |
 | `sleep N` | Pause for N seconds |
 | `time cmd` | Measure execution time |
-```
+:::
 
-```{dropdown} 🌐 Environment & Shell Config
+:::{dropdown} 🌐 Environment & Shell Config
 
 ```bash
 export VAR=value         # export to child processes
@@ -372,9 +372,9 @@ shopt -s histappend
 # Auto-complete
 bind 'set show-all-if-ambiguous on'
 ```
-```
+:::
 
-```{dropdown} 💡 Tips & Tricks
+:::{dropdown} 💡 Tips & Tricks
 
 - **Brace expansion:** `mkdir -p project/{src,tests,docs}` creates all three dirs
 - **Glob patterns:** `*` any chars, `?` one char, `[abc]` character class, `**` recursive (with `shopt -s globstar`)
@@ -386,4 +386,4 @@ bind 'set show-all-if-ambiguous on'
 - **Null device:** `cmd > /dev/null 2>&1` suppress all output
 - **xargs:** `find . -name "*.log" | xargs rm` pass results as arguments
 - **Script directory:** `DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"`
-```
+:::

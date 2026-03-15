@@ -16,7 +16,7 @@
 
 ---
 
-```{dropdown} 🚀 Opening & Exiting
+:::{dropdown} 🚀 Opening & Exiting
 :open:
 
 | Command | Description |
@@ -30,9 +30,9 @@
 | `^X` | Exit nano |
 | `^X` then `Y` | Save and exit |
 | `^X` then `N` | Exit without saving |
-```
+:::
 
-```{dropdown} 💾 Saving & Files
+:::{dropdown} 💾 Saving & Files
 
 | Shortcut | Description |
 |----------|-------------|
@@ -41,9 +41,9 @@
 | `^O` then `Enter` | Confirm save with same filename |
 | `^R` | Read (insert) another file at cursor |
 | `^T` (in filename prompt) | Open file browser to pick a file |
-```
+:::
 
-```{dropdown} 🧭 Navigation
+:::{dropdown} 🧭 Navigation
 
 | Shortcut | Description |
 |----------|-------------|
@@ -60,9 +60,9 @@
 | `M-/` or `^End` | Go to last line |
 | `^_` | Go to specific line (and column) |
 | `M-G` | Same as `^_` — go to line number |
-```
+:::
 
-```{dropdown} ✏️ Editing
+:::{dropdown} ✏️ Editing
 
 | Shortcut | Description |
 |----------|-------------|
@@ -79,9 +79,9 @@
 | `Tab` | Insert tab / indent |
 | `M-}` | Indent selected lines |
 | `M-{` | Unindent selected lines |
-```
+:::
 
-```{dropdown} 🔍 Search & Replace
+:::{dropdown} 🔍 Search & Replace
 
 | Shortcut | Description |
 |----------|-------------|
@@ -107,9 +107,9 @@
 | `Y` | Replace this occurrence |
 | `N` | Skip this occurrence |
 | `A` | Replace all occurrences |
-```
+:::
 
-```{dropdown} 📋 Selection & Cut/Copy/Paste
+:::{dropdown} 📋 Selection & Cut/Copy/Paste
 
 | Shortcut | Description |
 |----------|-------------|
@@ -121,9 +121,9 @@
 | `M-A` again | Cancel mark/selection |
 
 **Cut buffer tip:** `^K` multiple times appends to the cut buffer — paste all at once with `^U`.
-```
+:::
 
-```{dropdown} 🪟 Multiple Buffers & Toggles
+:::{dropdown} 🪟 Multiple Buffers & Toggles
 
 | Shortcut | Description |
 |----------|-------------|
@@ -136,9 +136,9 @@
 | `M-S` | Toggle soft-wrapping |
 | `M-X` | Toggle help bar at bottom |
 | `M-C` | Toggle cursor position display |
-```
+:::
 
-```{dropdown} ⚙️ Configuration (~/.nanorc)
+:::{dropdown} ⚙️ Configuration (~/.nanorc)
 
 ```ini
 # Line numbers
@@ -169,9 +169,9 @@ set backup
 # Syntax highlighting (load all defaults)
 include "/usr/share/nano/*.nanorc"
 ```
-```
+:::
 
-```{dropdown} 💡 Tips & Tricks
+:::{dropdown} 💡 Tips & Tricks
 
 - **Bottom bar shortcuts:** nano always shows available shortcuts at the bottom — `^` = Ctrl, `M-` = Alt
 - **Line number jump:** `^_` then type `line,column` (e.g. `42,10`) to jump precisely
@@ -181,4 +181,4 @@ include "/usr/share/nano/*.nanorc"
 - **Syntax highlighting:** install language `.nanorc` files from `/usr/share/nano/` or `nano-syntax-highlighting` package
 - **Disable help bar** for more editing space: `M-X` toggles it, or add `set nohelp` to `~/.nanorc`
 - **Undo history** is session-only — changes cannot be undone after reopening a file
-```
+:::
