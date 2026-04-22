@@ -12,7 +12,7 @@ Essential tools and libraries for building modern applications across web, mobil
 :link: jupyterbook
 :link-type: doc
 
-```{image} https://jupyterbook.org/build/config-item-938b93dc-1505efe91c0bb17a705b9a08b033d0a1.svg
+```{image} https://jupyterbook.org/_static/logo-wide.svg
 :height: 25px
 :align: left
 ```

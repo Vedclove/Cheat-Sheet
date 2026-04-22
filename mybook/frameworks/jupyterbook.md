@@ -1,4 +1,4 @@
-```{image} https://jupyterbook.org/build/config-item-938b93dc-1505efe91c0bb17a705b9a08b033d0a1.svg
+```{image} https://jupyterbook.org/_static/logo-wide.svg
 :height: 60px
 :align: left
 ```
