@@ -9,29 +9,30 @@ project:
   bibliography:
     - references.bib
   toc:
-    - file: intro
-    - file: programming-languages/programming-languages
+    - file: intro.md
+    - file: programming-languages/programming-languages.md
       children:
-        - file: programming-languages/python
-        - file: programming-languages/javascript
-    - file: devops/devops
+        - file: programming-languages/python.md
+        - file: programming-languages/javascript.md
+    - file: devops/devops.md
       children:
-        - file: devops/docker
-        - file: devops/github
-    - file: frameworks/frameworks
+        - file: devops/docker.md
+        - file: devops/github.md
+    - file: frameworks/frameworks.md
       children:
-        - file: frameworks/jupyterbook
-        - file: frameworks/uv
-    - file: cloud-services/cloud-services
+        - file: frameworks/jupyterbook.md
+        - file: frameworks/uv.md
+    - file: cloud-services/cloud-services.md
       children:
-        - file: cloud-services/aws
-    - file: terminal/terminal
+        - file: cloud-services/aws.md
+    - file: terminal/terminal.md
       children:
-        - file: terminal/bash
-        - file: terminal/nano
-        - file: terminal/vim
+        - file: terminal/bash.md
+        - file: terminal/nano.md
+        - file: terminal/vim.md
 
 site:
+  url: https://cheatsheet.ved-codes.dev
   template: book-theme
   options:
     logo: logo.png

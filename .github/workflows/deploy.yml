@@ -37,18 +37,18 @@ jobs:
         run: |
           pip install "jupyter-book>=2,<3"
 
-      - name: Clear Jupyter Book cache
-        run: |
-          jupyter book clean --all -y || true
-
       - name: Build the book
         run: |
-          jupyter book build
+          jupyter book build --html
+
+      - name: Copy CNAME to build output
+        run: |
+          cp CNAME _build/html/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./mybook/_build/site
+          path: ./mybook/_build/html
 
   deploy:
     environment:
