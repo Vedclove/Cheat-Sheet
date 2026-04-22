@@ -43,12 +43,12 @@ jobs:
 
       - name: Build the book
         run: |
-          jupyter book build --html
+          jupyter book build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./mybook/_build/html
+          path: ./mybook/_build/site
 
   deploy:
     environment:
