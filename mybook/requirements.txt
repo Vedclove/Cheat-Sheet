@@ -1,2 +1,2 @@
-jupyter-book<2
+jupyter-book>=2,<3
 sphinx-autobuild
